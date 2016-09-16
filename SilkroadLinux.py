@@ -20,7 +20,7 @@ def patch(path):
 			print('\tpatch offset %d' % offset)
 
 			mm.seek(offset)
-			mm.write_byte(0xEB)
+			mm.write_byte(chr(0xEB))
 			mm.seek(0)
 
 			count += 1
